@@ -16,3 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home',function(){
+    return view('home');
+});
+
+Route::get('/intro',function(){
+    return view('intro');
+});
+
+Route::redirect('/zzz','/intro',301);
+
+
+
+Route::get('/user/{name?}/{id?}',function($name = null , $id = null){
+   $data = compact('name','id');
+    return view('user')->with($data);
+});

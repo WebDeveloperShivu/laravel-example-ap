@@ -48,7 +48,223 @@
                                     </svg>
                                 </div>
 
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Documentation</h2>
+                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
+    <p>PS C:\> cd .\xampp\htdocs\laravel\laravel-example-ap\example-app\git status
+Set-Location : A positional parameter cannot be found that accepts argument 'status'.
+At line:1 char:1
++ cd .\xampp\htdocs\laravel\laravel-example-ap\example-app\git status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\> cd .\xampp\htdocs\laravel\laravel-example-ap\example-app\
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git init
+Initialized empty Git repository in C:/xampp/htdocs/laravel/laravel-example-ap/example-app/.git/
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .editorconfig
+        .env.example
+        .gitattributes
+        .gitignore
+        README.md
+        app/
+        artisan
+        bootstrap/
+        composer.json
+        composer.lock
+        config/
+        database/
+        package.json
+        phpunit.xml
+        public/
+        resources/
+        routes/
+        storage/
+        tests/
+        vite.config.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git add .
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git commit -m "create project"
+[main (root-commit) a2c55e8] create project
+ 79 files changed, 11104 insertions(+)
+ create mode 100644 .editorconfig
+ create mode 100644 .env.example
+ create mode 100644 .gitattributes
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 app/Console/Kernel.php
+ create mode 100644 app/Exceptions/Handler.php
+ create mode 100644 app/Http/Controllers/Controller.php
+ create mode 100644 app/Http/Kernel.php
+ create mode 100644 app/Http/Middleware/Authenticate.php
+ create mode 100644 app/Http/Middleware/EncryptCookies.php
+ create mode 100644 app/Http/Middleware/PreventRequestsDuringMaintenance.php
+ create mode 100644 app/Http/Middleware/RedirectIfAuthenticated.php
+ create mode 100644 app/Http/Middleware/TrimStrings.php
+ create mode 100644 app/Http/Middleware/TrustHosts.php
+ create mode 100644 app/Http/Middleware/TrustProxies.php
+ create mode 100644 app/Http/Middleware/ValidateSignature.php
+ create mode 100644 app/Http/Middleware/VerifyCsrfToken.php
+ create mode 100644 app/Models/User.php
+ create mode 100644 app/Providers/AppServiceProvider.php
+ create mode 100644 app/Providers/AuthServiceProvider.php
+ create mode 100644 app/Providers/BroadcastServiceProvider.php
+ create mode 100644 app/Providers/EventServiceProvider.php
+ create mode 100644 app/Providers/RouteServiceProvider.php
+ create mode 100644 artisan
+ create mode 100644 bootstrap/app.php
+ create mode 100644 bootstrap/cache/.gitignore
+ create mode 100644 composer.json
+ create mode 100644 composer.lock
+ create mode 100644 config/app.php
+ create mode 100644 config/auth.php
+ create mode 100644 config/broadcasting.php
+ create mode 100644 config/cache.php
+ create mode 100644 config/cors.php
+ create mode 100644 config/database.php
+ create mode 100644 config/filesystems.php
+ create mode 100644 config/hashing.php
+ create mode 100644 config/logging.php
+ create mode 100644 config/mail.php
+ create mode 100644 config/queue.php
+ create mode 100644 config/sanctum.php
+ create mode 100644 config/services.php
+ create mode 100644 config/session.php
+ create mode 100644 config/view.php
+ create mode 100644 database/.gitignore
+ create mode 100644 database/factories/UserFactory.php
+ create mode 100644 database/migrations/2014_10_12_000000_create_users_table.php
+ create mode 100644 database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php
+ create mode 100644 database/migrations/2019_08_19_000000_create_failed_jobs_table.php
+ create mode 100644 database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php
+ create mode 100644 database/seeders/DatabaseSeeder.php
+ create mode 100644 package.json
+ create mode 100644 phpunit.xml
+ create mode 100644 public/.htaccess
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/index.php
+ create mode 100644 public/robots.txt
+ create mode 100644 resources/css/app.css
+ create mode 100644 resources/js/app.js
+ create mode 100644 resources/js/bootstrap.js
+ create mode 100644 resources/views/welcome.blade.php
+ create mode 100644 routes/api.php
+ create mode 100644 routes/channels.php
+ create mode 100644 routes/console.php
+ create mode 100644 routes/web.php
+ create mode 100644 storage/app/.gitignore
+ create mode 100644 storage/app/public/.gitignore
+ create mode 100644 storage/framework/.gitignore
+ create mode 100644 storage/framework/cache/.gitignore
+ create mode 100644 storage/framework/cache/data/.gitignore
+ create mode 100644 storage/framework/sessions/.gitignore
+ create mode 100644 storage/framework/testing/.gitignore
+ create mode 100644 storage/framework/views/.gitignore
+ create mode 100644 storage/logs/.gitignore
+ create mode 100644 tests/CreatesApplication.php
+ create mode 100644 tests/Feature/ExampleTest.php
+ create mode 100644 tests/TestCase.php
+ create mode 100644 tests/Unit/ExampleTest.php
+ create mode 100644 vite.config.js
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git branch
+* main
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git push origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git push origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> yes
+yes : The term 'yes' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ yes
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (yes:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app>
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git init
+Reinitialized existing Git repository in C:/xampp/htdocs/laravel/laravel-example-ap/example-app/.git/
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git remote add origin https://github.com/WebDeveloperShivu/laravel-example-ap.git
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git remote -v
+origin  https://github.com/WebDeveloperShivu/laravel-example-ap.git (fetch)
+origin  https://github.com/WebDeveloperShivu/laravel-example-ap.git (push)
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git push origin main
+To https://github.com/WebDeveloperShivu/laravel-example-ap.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/WebDeveloperShivu/laravel-example-ap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git fetch origin
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 846 bytes | 76.00 KiB/s, done.
+From https://github.com/WebDeveloperShivu/laravel-example-ap
+ * [new branch]      main       -> origin/main
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git add .
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git push origin main
+To https://github.com/WebDeveloperShivu/laravel-example-ap.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/WebDeveloperShivu/laravel-example-ap.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> main
+
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git pull origin main
+From https://github.com/WebDeveloperShivu/laravel-example-ap
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git push origin main
+To https://github.com/WebDeveloperShivu/laravel-example-ap.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/WebDeveloperShivu/laravel-example-ap.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app> git push -f origin main
+Enumerating objects: 102, done.
+Counting objects: 100% (102/102), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (84/84), done.
+Writing objects: 100% (102/102), 72.22 KiB | 2.58 MiB/s, done.
+Total 102 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/WebDeveloperShivu/laravel-example-ap.git
+ + c57e9e7...a2c55e8 main -> main (forced update)
+PS C:\xampp\htdocs\laravel\laravel-example-ap\example-app></p></h2>
 
                                 <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                                     Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
