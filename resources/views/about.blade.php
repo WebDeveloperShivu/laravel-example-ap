@@ -3,7 +3,7 @@
 @section('main-section')
 <div class="container">
     <h2>
-        Home Page
+        about Page
     </h2>
 </div>
 @endsection

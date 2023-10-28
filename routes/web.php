@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,23 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/home',function(){
-    return view('home');
-});
-
-Route::get('/intro',function(){
-    return view('intro');
-});
-
-Route::redirect('/zzz','/intro',301);
-
-
-
-Route::get('/user/{name?}/{id?}',function($name = null , $id = null){
-   $data = compact('name','id');
-    return view('user')->with($data);
-});
+Route::get("/", [UserController::class,"index"]);
+Route::get("/login", [UserController::class,"login"]);
+Route::get("/registration", [UserController::class,"registrationform"]);
+Route::post("/registration", [UserController::class,"userregistration"]);
